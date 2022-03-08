@@ -1,0 +1,107 @@
+/* Affiche un cercle */
+
+#btn-red{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: rouge;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes rouge{
+    0%{left: 0px; top: 0px;}
+    25%{left: 200px; top: 0px;}
+    50%{left: 200px; top: 200px;}
+    75%{left: 0px; top: 200px;}
+    100%{left: 0px; top: 0px;}
+
+}
+
+#btn-blue{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: bleue;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bleue{
+    0%{left: 0px; top: 0px;}
+    75%{left: 200px; top: 0px;}
+    50%{left: 200px; top: 200px;}
+    25%{left: 0px; top: 200px;}
+    100%{left: 0px; top: 0px;}
+
+}
+
+#btn-yellow{
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: jaune;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jaune{
+    0%{left: 0px; top: 0px;}
+    75%{left: 200px; top: 0px;}
+    100%{left: 200px; top: 200px;}
+    25%{left: 0px; top: 200px;}
+    50%{left: 0px; top: 0px;}
+
+}
+
+#btn-grenn{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    animation-name: verte;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes verte{
+    0%{left: 0px; top: 0px;}
+    75%{left: 200px; top: 0px;}
+    100%{left: 200px; top: 200px;}
+    50%{left: 0px; top: 200px;}
+    25%{left: 0px; top: 0px;}
+
+}
+
+h1{
+    height: 100vh;
+    /* 1vw = 1% de la largeur de la fenêtre */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* définit la façon dont les éléments sont placés */
+    align-items: center;
+}
+html{
+    font-size: 100%;
+    /* 1rem -> 16px */
+}
+body{
+    font-size: 1,4rem;
+    /* 14px */
+    font-family: Arial;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
