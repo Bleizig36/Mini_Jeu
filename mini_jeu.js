@@ -11,12 +11,12 @@ console.log(btnYellow,"Balle jaune");
 const btnGrenn = document.getElementById('btn-grenn');
 console.log(btnGrenn,"Balle verte");
 
-// J'agi
+// J'agis
  
 // Ici la fonction est asycrone -> elle n'agis pas tout de suite 
 //On définis un compteur
-let comteur = 0;
-console.log(comteur, 'comteur');
+let compteur = 0;
+console.log(compteur, 'compteur');
 
 //On comte le nmb de click : 
 btnRed.addEventListener('click', function(){
@@ -36,14 +36,28 @@ btnYellow.addEventListener('click', function(){
 });
 
 let titre = document.getElementById('titre')
-// enlever les repetissions
+// enlever les répétitions
 
 function add(){
-    comteur = comteur + 1 
-    console.log(comteur, 'Yeaa et 1 de plus ! ')
-    titre.innerText = comteur , 'Yeaa et 1 de plus ! '
+    compteur = compteur + 1 
+    console.log(compteur, 'Yeaa et 1 de plus ! ')
+    titre.innerText = compteur , 'Yeaa et 1 de plus ! '
 }
 
 // enplacement -> là où on met le truc
 // innerText -> là où on met le texte 
 
+//setTimeout(fonction, délai);
+
+setTimeout(function(){
+    // action a réaliser a la fin du temps
+    console.log('fin du chrono')
+},10000);
+
+setTimeout(function(){
+    // action a réaliser a la fin du temps
+    btnRed.remove();
+    btnBlue.remove();
+    btnGrenn.remove();
+    btnYellow.remove();
+},10000);
